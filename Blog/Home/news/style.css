@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+/* Navbar */
+.navbar {
+    background-color: #134B70;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.navbar ul {
+    list-style: none;
+    text-align: center;
+}
+
+.navbar ul li {
+    display: inline;
+    margin: 0 30px;
+}
+
+.navbar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+    transition: all 0.3s ease; /* Transition untuk animasi hover */
+}
+
+/* Animasi hover */
+.navbar ul li a:hover {
+    color: #CFA464;
+    transform: scale(1.1); /* Membesarkan ukuran sedikit saat hover */
+}
+
+/* Animasi saat diklik */
+.navbar ul li a.clicked {
+    animation: clickEffect 0.5s forwards;
+}
+
+/* Keyframes untuk efek klik */
+@keyframes clickEffect {
+    0% {
+        transform: scale(1);
+        background-color: transparent;
+    }
+    50% {
+        transform: scale(0.9);
+        background-color: rgba(255, 255, 255, 0.3);
+    }
+    100% {
+        transform: scale(1);
+        background-color: transparent;
+    }
+}
+
+/* Content */
+.content {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.content h1 {
+    color: #134B70;
+    margin-bottom: 20px;
+}
+
+/* Main Image */
+.main-image {
+    width: 320px;  /* Lebar gambar utama */
+    height: 280px; /* Tinggi gambar utama */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Jarak antara gambar dan paragraf */
+}
+.second-image {
+    width: 300px;  /* Lebar gambar utama */
+    height: 200px; /* Tinggi gambar utama */
+    border-radius: 10px;
+    margin-bottom: 20px; /* Jarak antara gambar dan paragraf */
+    margin-top: 20px;
+}
+
+/* Paragraph Style */
+.content p {
+    text-align: left;
+    max-width: 800px;
+    margin: 0 auto;
+    color: #333;
+    font-size: 18px;
+    line-height: 1.8;
+}
+/* Share Us Section */
+.share-us {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: #f4f4f4; /* Background color */
+    border-radius: 10px; /* Radius border */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Bayangan */
+}
+
+.share-us h2 {
+    color: #134B70; /* Warna teks */
+    margin-bottom: 20px; /* Jarak bawah judul */
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center; /* Mengatur icon ke tengah */
+}
+
+.social-icon {
+    width: 40px; /* Lebar ikon */
+    height: 40px; /* Tinggi ikon */
+    margin: 0 15px; /* Jarak antar ikon */
+}

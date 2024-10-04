@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+html,
+body{
+    width: 100%;
+    background-image: url(img/dog.jpg);
+    overflow-x: hidden;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* --------------------NAVBAR---------------------------- */
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 7%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.326);
+    border-radius: 20px;
+}
+
+header .logo {
+    font-size: 25px;
+    color: white;
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+header .logo:hover{
+    color: rgb(184, 143, 55);
+    transition: 0.5s ease-in-out;
+}
+
+.navbar {
+    display: flex;
+    position: relative;
+    list-style: none;
+}
+
+.navbar li{
+    padding: 10px;
+}
+
+.navbar li a{
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    margin: 20px;
+    transition: 0.5s ease;
+
+}
+
+.navbar li .social-m{
+    background-color: rgb(176, 141, 88);
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.navbar li .social-m:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgb(184, 143, 55);
+}
+
+.navbar li a:hover{
+    letter-spacing: 5px;
+    color: rgb(184, 143, 55);
+}
+
+/* --------------------NAVBAR--------enddd----------------- */
+
+
+
+/* -------------------HOME------------------------------- */
+
+.home{
+    height: 60vh;
+
+}
+
+/* text */
+
+.text-home{
+    font-size: 25px;
+    margin-top: 150px;
+    text-align: center;
+}
+
+.text-home h1{
+    color: white;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.text-home h1 span{
+    color: rgb(234, 195, 118);
+    
+}
+
+.text-home h3{
+    color: white;
+    font-weight: 200;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.text-home h3:hover{
+    color: rgb(205, 189, 13);
+    letter-spacing: 5px;
+    background-color: white;
+}
+
+.text-home h5{
+    display: inline-block;
+    color: white;
+    font-size: 10px;
+
+}
+
+/* BUTTON */
+
+.btn-text-home{
+    margin-top: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-text-home a{
+    width: 30%;
+    background-color: rgba(207, 164, 100, 0.604);
+    padding: 5px;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    transition: 0.2s ease-in-out;
+    border-radius: 24px;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-text-home a:hover{
+    background-color: rgb(184, 143, 55);
+    color: rgb(242, 234, 234);
+    width: 38%;
+}
+
+/* -------------------HOME---------ENDDD-------------------- */
