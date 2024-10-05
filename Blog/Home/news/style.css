@@ -20,12 +20,12 @@ body {
 
 .navbar ul {
     list-style: none;
-    text-align: center;
+    text-align: justify;
 }
 
 .navbar ul li {
     display: inline;
-    margin: 0 30px;
+    margin: 0 20px;
 }
 
 .navbar ul li a {
