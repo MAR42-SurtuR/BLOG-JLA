@@ -10,7 +10,7 @@
 html,
 body{
     width: 100%;
-    background-image: url(img/nature-1.jpg);
+    background-image: url(img/cat.jpg);
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
@@ -34,6 +34,7 @@ header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.301);
     border-radius: 20px;
+    
 }
 
 header .logo {
@@ -43,14 +44,24 @@ header .logo {
     cursor: pointer;
 }
 
-header .logo:hover{
-    color: rgb(184, 143, 55);
+header .logo span{
+    color: red;
     transition: 0.5s ease-in-out;
 }
 
+header .logo:hover > span{
+    color: white;
+}
+
+header .logo:hover{
+    color: rgb(180, 68, 68);
+    transition: 0.5s ease-in-out;
+}
+
+/* NAVBARR */
+
 .navbar {
     display: flex;
-    position: relative;
     list-style: none;
 }
 
@@ -69,18 +80,18 @@ header .logo:hover{
 
 .navbar li .social-m{
     background-color: rgb(161, 46, 37);
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     border-radius: 30px;
 }
 
 .navbar li .social-m:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(184, 143, 55);
+    background-color: rgb(184, 63, 39);
 }
 
 .navbar li a:hover{
     letter-spacing: 5px;
-    color: rgb(184, 143, 55);
+    color: rgb(186, 54, 54);
 }
 
 /* --------------------NAVBAR--------enddd----------------- */
@@ -90,7 +101,7 @@ header .logo:hover{
 /* -------------------HOME------------------------------- */
 
 .home{
-    height: 60vh;
+    height: 70vh;
 
 }
 
@@ -104,15 +115,15 @@ header .logo:hover{
 
 .text-home h1{
     color: white;
-    font-weight: 600;
+    font-weight: 500;
     cursor: pointer;
-    font-family: "Cinzel", serif;
+    font-family: "Montserrat", system-ui;
 }
 
 .text-home h1 span{
-    color: rgb(103, 39, 39);
-    font-family: "Cinzel", serif;
-    font-weight: 800;
+    color: rgb(227, 71, 71);
+    font-family: "Montserrat", system-ui;
+    font-weight: 500;
 }
 
 .text-home h3{
@@ -120,12 +131,12 @@ header .logo:hover{
     font-weight: 200;
     cursor: pointer;
     transition: 0.2s ease-in-out;
-
+    font-family: "Montserrat", system-ui;
 }
 
 .text-home h3:hover{
-    color: rgb(211, 108, 104);
-    letter-spacing: 5px;
+    color: rgb(231, 182, 47);
+    letter-spacing: 5px;    
     background-color: rgba(16, 16, 16, 0.404);
 }
 
@@ -164,3 +175,20 @@ header .logo:hover{
 }
 
 /* -------------------HOME---------ENDDD-------------------- */
+
+
+
+/* --------------------FOOTER-------------------------------- */
+
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+    background-color: rgba(49, 53, 57, 0.351);
+}
+
+/* --------------------FOOTER-------------------------------- */
