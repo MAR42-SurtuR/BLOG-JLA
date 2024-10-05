@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +10,11 @@
 html,
 body{
     width: 100%;
-    background-image: url(img/dog.jpg);
+    background-image: url(img/nature-1.jpg);
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
+    
 }
 
 
@@ -64,7 +68,7 @@ header .logo:hover{
 }
 
 .navbar li .social-m{
-    background-color: rgb(176, 141, 88);
+    background-color: rgb(161, 46, 37);
     padding: 10px;
     border-radius: 30px;
 }
@@ -100,13 +104,15 @@ header .logo:hover{
 
 .text-home h1{
     color: white;
-    font-weight: 400;
+    font-weight: 600;
     cursor: pointer;
+    font-family: "Cinzel", serif;
 }
 
 .text-home h1 span{
-    color: rgb(234, 195, 118);
-    
+    color: rgb(103, 39, 39);
+    font-family: "Cinzel", serif;
+    font-weight: 800;
 }
 
 .text-home h3{
@@ -114,12 +120,13 @@ header .logo:hover{
     font-weight: 200;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+
 }
 
 .text-home h3:hover{
-    color: rgb(205, 189, 13);
+    color: rgb(211, 108, 104);
     letter-spacing: 5px;
-    background-color: white;
+    background-color: rgba(16, 16, 16, 0.404);
 }
 
 .text-home h5{
@@ -139,21 +146,21 @@ header .logo:hover{
 }
 
 .btn-text-home a{
-    width: 30%;
-    background-color: rgba(207, 164, 100, 0.604);
+    width: 20%;
+    background-color: rgba(161, 45, 37, 0.711);
     padding: 5px;
     font-size: 20px;
     text-decoration: none;
     color: white;
     transition: 0.2s ease-in-out;
-    border-radius: 24px;
+    border-radius: 10px;
     transition: 0.3s ease-in-out;
 }
 
 .btn-text-home a:hover{
-    background-color: rgb(184, 143, 55);
+    background-color: rgb(172, 32, 32);
     color: rgb(242, 234, 234);
-    width: 38%;
+    width: 25%;
 }
 
 /* -------------------HOME---------ENDDD-------------------- */
