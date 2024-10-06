@@ -1,41 +1,75 @@
 body {
+    background-image:url(foto3.jpg) ;
     font-family: Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #134B70;
-    background-image: url();
+    background-size: cover;
+    background-position: center;
 }
 .navbar {
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.326);
     overflow: hidden;
     padding: 10px 20px;
+    border-radius: 10px;
+    margin: 20px 20px;
 }
 .navbar a {
-    color: #fff;
+    color: rgb(255, 255, 255);
+    transition: 0.5s ease-in-out;
     text-decoration: none;
     padding: 10px 20px;
     display: inline-block;
 }
 .navbar a:hover {
-    background-color: #575757;
+    color: rgb(252, 172, 0);
+    transform: scale(1.1);
 }
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
 }
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 .section {
     display: flex;
     align-items: center;
     margin: 20px 0;
-    background-color: #FEF3E2;
+    background-color: hsla(0, 0%, 100%, 0.612);
     padding: 20px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    opacity: 0; /* Initial state to make the animation visible */
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    margin: 20px 0;
+}
+.section:nth-child(odd) {
+    animation-name: slideInRight;
 }
 .section:nth-child(even) {
     flex-direction: row-reverse;
+    animation-name: slideInLeft;
 }
 .section img {
     width: 300px;

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Dosis:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -7,10 +10,11 @@
 html,
 body{
     width: 100%;
-    background-image: url(img/dog.jpg);
+    background-image: url(img/cat.jpg);
     overflow-x: hidden;
     background-size: cover;
     background-position: center;
+    
 }
 
 
@@ -30,6 +34,7 @@ header{
     width: 100%;
     background-color: rgba(0, 0, 0, 0.301);
     border-radius: 20px;
+    
 }
 
 header .logo {
@@ -39,14 +44,24 @@ header .logo {
     cursor: pointer;
 }
 
-header .logo:hover{
-    color: rgb(184, 143, 55);
+header .logo span{
+    color: red;
     transition: 0.5s ease-in-out;
 }
 
+header .logo:hover > span{
+    color: white;
+}
+
+header .logo:hover{
+    color: rgb(180, 68, 68);
+    transition: 0.5s ease-in-out;
+}
+
+/* NAVBARR */
+
 .navbar {
     display: flex;
-    position: relative;
     list-style: none;
 }
 
@@ -64,19 +79,19 @@ header .logo:hover{
 }
 
 .navbar li .social-m{
-    background-color: rgb(176, 141, 88);
-    padding: 10px;
+    background-color: rgb(161, 46, 37);
+    padding: 10px 20px 10px 20px;
     border-radius: 30px;
 }
 
 .navbar li .social-m:hover{
     color: rgb(255, 255, 255);
-    background-color: rgb(184, 143, 55);
+    background-color: rgb(184, 63, 39);
 }
 
 .navbar li a:hover{
     letter-spacing: 5px;
-    color: rgb(184, 143, 55);
+    color: rgb(186, 54, 54);
 }
 
 /* --------------------NAVBAR--------enddd----------------- */
@@ -86,7 +101,7 @@ header .logo:hover{
 /* -------------------HOME------------------------------- */
 
 .home{
-    height: 60vh;
+    height: 70vh;
 
 }
 
@@ -100,13 +115,15 @@ header .logo:hover{
 
 .text-home h1{
     color: white;
-    font-weight: 400;
+    font-weight: 500;
     cursor: pointer;
+    font-family: "Montserrat", system-ui;
 }
 
 .text-home h1 span{
-    color: rgb(234, 195, 118);
-    
+    color: rgb(227, 71, 71);
+    font-family: "Montserrat", system-ui;
+    font-weight: 500;
 }
 
 .text-home h3{
@@ -114,12 +131,13 @@ header .logo:hover{
     font-weight: 200;
     cursor: pointer;
     transition: 0.2s ease-in-out;
+    font-family: "Montserrat", system-ui;
 }
 
 .text-home h3:hover{
-    color: rgb(205, 189, 13);
-    letter-spacing: 5px;
-    background-color: white;
+    color: rgb(231, 182, 47);
+    letter-spacing: 5px;    
+    background-color: rgba(16, 16, 16, 0.404);
 }
 
 .text-home h5{
@@ -139,21 +157,38 @@ header .logo:hover{
 }
 
 .btn-text-home a{
-    width: 30%;
-    background-color: rgba(207, 164, 100, 0.604);
+    width: 20%;
+    background-color: rgba(161, 45, 37, 0.711);
     padding: 5px;
     font-size: 20px;
     text-decoration: none;
     color: white;
     transition: 0.2s ease-in-out;
-    border-radius: 24px;
+    border-radius: 10px;
     transition: 0.3s ease-in-out;
 }
 
 .btn-text-home a:hover{
-    background-color: rgb(184, 143, 55);
+    background-color: rgb(172, 32, 32);
     color: rgb(242, 234, 234);
-    width: 38%;
+    width: 25%;
 }
 
 /* -------------------HOME---------ENDDD-------------------- */
+
+
+
+/* --------------------FOOTER-------------------------------- */
+
+footer{
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 200;
+    background-color: rgba(49, 53, 57, 0.351);
+}
+
+/* --------------------FOOTER-------------------------------- */
