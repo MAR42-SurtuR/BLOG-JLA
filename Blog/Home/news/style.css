@@ -64,12 +64,13 @@ body {
 .main-image {
     width: 320px;
     height: 280px;
+    margin-top: 20px;
     border-radius: 10px;
 }
 
 .second-image {
-    width: 300px;
-    height: 200px;
+    width: 320px;
+    height: 280px;
     margin-top: 20px;
     border-radius: 10px;
 }
